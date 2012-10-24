@@ -1,0 +1,35 @@
+NCBI_File
+
+NC_003098.1_cdsid_NP_357595.1	1..1362
+NC_003098.1_cdsid_NP_357596.1	1521..2657
+NC_003098.1_cdsid_NP_357597.1	2722..2916
+
+
+
+PTT_File
+
+1..1362         +	 453     15902045        dnaA    spr0001 -	 COG0593L        chromosomal replication initiation protein
+1521..2657	 +	 378     15902046        dnaN    spr0002 -	 COG0592L        DNA polymerase III subunit beta
+2722..2916	 +	 64	 15902047        -	 spr0003 -	 COG4481S        hypothetical protein
+
+
+
+ReadCount_File
+
+NC_003098.1_cdsid_NP_357595.1   587.623901783
+NC_003098.1_cdsid_NP_357596.1   529.507252156
+NC_003098.1_cdsid_NP_357597.1   32.2870275705
+NC_003098.1_cdsid_NP_357598.1   309.032978175
+
+
+
+J'ai besoin d'un script python pour convertir les accessions de la colonne 0 du fichier ReadCount_File (NC_...) par les numéros sprXXXX correspondants qui se trouvent à la colonne 5 
+du fichier PTT_File.
+ 
+Pour établir une référence entre les accessions NC_... et les numéros sprXXXX, on devra utiliser le ficher NCBI_File. Celui-ci contient les mêmes accessions NC_... que le fichier ReadCount_File 
+et contient en plus la position des gènes correspondants dans le génome de S. pneumoniae R6 (Colonne 1 du fichier NCBI_File). Puisque ces positions de gènes sont également présentes dans le fichier
+PTT_File (Colonne 0), on peut donc associer les accessions NC_... à un numéro sprXXXX via la correspondance des positions. 
+
+Donc, en ce servant de cette référence, je veux changer les accessions NC_... du fichier ReadCount_File par les numéros sprXXXX correspondants.
+
+J'ai essayé par moi-même et j'ai cherché un peu sur le sage Google mais ça dépasse mes compétences actuelles.
