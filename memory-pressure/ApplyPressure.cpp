@@ -32,6 +32,12 @@ int main(int count, char ** arguments) {
 
 		int bytes = bytesInSlice;
 
+		uint64_t remainingBytes = totalBytes - allocatedBytes;
+
+		if(remainingBytes < (uint64_t) bytes) {
+			bytes = remainingBytes;
+		}
+
 		char * memory = (char *) malloc(bytes * sizeof(char));
 
 		if(memory == NULL) {
