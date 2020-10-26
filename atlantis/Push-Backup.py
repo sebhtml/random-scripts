@@ -58,6 +58,16 @@ def make_snapshot(snapshot_name):
 	argv = ["zfs", "snapshot", "-r", snapshot_name]
 	subprocess.run(argv)
 
+def get_last_remote_snapshot(backup_server_user, backup_server_fqdn):
+	command = [
+		"ssh", "-l", backup_server_user, backup_server_fqdn,  # SSH part
+		"zfs list -t snapshot -d 1 -o name -p|tail -n1"
+		]
+	result = subprocess.run(command, capture_output=True)
+	output = result.stdout
+	snapshot_name = output.strip()
+	return snapshot_name
+
 def send_snapshot(backup_server_user, backup_server_fqdn, snapshot_name, pool_name):
 	# Idea: send | pv | recv
 
