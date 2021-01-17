@@ -72,6 +72,7 @@ def send_snapshot(backup_server_user, backup_server_fqdn, snapshot_name, pool_na
 	# Idea: send | pv | recv
 
 	last_remote_snapshot = get_last_remote_snapshot(backup_server_user, backup_server_fqdn)
+	print("last_remote_snapshot {}".format(last_remote_snapshot))
 	send_command = [
 		# -R, --replicate Generate a replication stream package
 		"zfs", "send",
