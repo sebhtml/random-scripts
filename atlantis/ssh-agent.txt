@@ -1,3 +1,3 @@
-setenv SSH_AUTH_SOCK /tmp/ssh-sjHR2N3Pas2E/agent.2038;
-setenv SSH_AGENT_PID 2062;
-echo Agent pid 2062;
+export SSH_AUTH_SOCK=/tmp/ssh-QPZcyjchwbXv/agent.32290;
+export SSH_AGENT_PID=32302;
+echo Agent pid 32302;
