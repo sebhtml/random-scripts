@@ -1,0 +1,4 @@
+# Device		Mountpoint	FStype	Options		Dump	Pass#
+/dev/gpt/swap0		none	swap	sw		0	0
+/dev/gpt/swap1		none	swap	sw		0	0
+fdescfs /dev/fd  fdescfs  rw  0  0
