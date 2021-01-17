@@ -1,0 +1,3 @@
+setenv SSH_AUTH_SOCK /tmp/ssh-sjHR2N3Pas2E/agent.2038;
+setenv SSH_AGENT_PID 2062;
+echo Agent pid 2062;
