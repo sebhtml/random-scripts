@@ -1,0 +1,12 @@
+{
+    "bpf": 1,
+    "cloned_release": "12.2-RELEASE",
+    "dhcp": 1,
+    "host_hostname": "samba",
+    "host_hostuuid": "samba",
+    "jail_zfs_dataset": "iocage/jails/samba/data",
+    "last_started": "2020-12-12 00:19:04",
+    "release": "12.2-RELEASE",
+    "vnet": 1,
+    "vnet0_mac": "a8a159d9f26b a8a159d9f26c"
+}
